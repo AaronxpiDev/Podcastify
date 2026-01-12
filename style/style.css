@@ -1,0 +1,65 @@
+/*Propiedades Globales*/
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* Etiquetas */
+body {
+    background-color: black;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: 300;
+}
+
+a:hover {
+    color: rgba(55, 220, 249, 0.936);
+    text-decoration: underline;
+}
+/*Clases*/
+.navbar-main {
+    display: flex;
+    padding: 2em;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.nav-links {
+    display: flex;
+    color: white;
+    list-style: none;
+    gap: 40px;
+    font-size: 25px;
+    flex-wrap: wrap;
+}
+
+.logo-img img{
+    width: 250px;
+}
+
+.hero-wrapper {
+    background: linear-gradient(rgba(0, 0, 0, 0.445)),
+    url(./img/background-hero.jpg);
+    height: 80vh;
+    background-size:cover;
+    background-position: center;
+    box-shadow: inset 0 100px 90px rgb(0, 0, 0),
+    inset 0 -65px 90px rgb(0, 0, 0);
+}
+
+.hero-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 60vh;
+    text-align: center;
+    font-weight: 700;
+}
+/*Transiciones / Animaciones / Hover*/
+
+/*Otras animaciones*/
