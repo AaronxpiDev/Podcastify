@@ -16,8 +16,9 @@ a {
 }
 
 a:hover {
-    color: rgba(55, 220, 249, 0.936);
+    color: rgba(174, 0, 255, 0.936);
     text-decoration: underline;
+    transition: all 0.3s ease;
 }
 /*Clases*/
 .navbar-main {
@@ -42,7 +43,7 @@ a:hover {
 }
 
 .hero-wrapper {
-    background: linear-gradient(rgba(0, 0, 0, 0.445)),
+    background: linear-gradient(rgba(0, 0, 0, 0.514)),
     url(./img/background-hero.jpg);
     height: 80vh;
     background-size:cover;
@@ -82,10 +83,24 @@ a:hover {
 .carousel-item img {
     width: 80%;
     height: 95%;
-    object-fit: cover;   /* clave */
+    object-fit: cover;
     border-radius: 15px;
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
 }
 
+.carousel-item img:hover {
+    transform: scale(1.08);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.35);
+}
+
+.carousel-item p, h5{
+    display: inline-block;
+    background: rgba(0, 0, 0, 0.363);
+    color: white;
+    padding: 6px 12px;
+    border-radius: 8px;
+    font-weight: 500;
+}
 /*Transiciones / Animaciones / Hover*/
 
 /*Otras animaciones*/
