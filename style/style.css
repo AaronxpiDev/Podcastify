@@ -6,7 +6,7 @@
 
 /* Etiquetas */
 body {
-    background-color: black;
+    background-color: rgb(0, 1, 17);
 }
 
 a {
@@ -60,6 +60,32 @@ a:hover {
     text-align: center;
     font-weight: 700;
 }
+
+/*Clases para el componente carrusel de bootstrap para poder corregir el tamano de las imagenes*/
+.destacados {
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.carousel-inner {
+    height: 40rem;
+    width: 80rem;
+}
+
+.carousel-item {
+    height: 100%;
+}
+
+.carousel-item img {
+    width: 80%;
+    height: 95%;
+    object-fit: cover;   /* clave */
+    border-radius: 15px;
+}
+
 /*Transiciones / Animaciones / Hover*/
 
 /*Otras animaciones*/
