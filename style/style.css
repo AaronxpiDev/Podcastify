@@ -15,12 +15,6 @@ a {
     font-weight: 300;
 }
 
-a:hover {
-    color: rgba(174, 0, 255, 0.936);
-    text-decoration: underline;
-    transition: all 0.3s ease;
-}
-
 footer {
     text-align: center;
     color: aliceblue;
@@ -38,13 +32,16 @@ footer {
     flex-wrap: wrap;
 }
 
-.nav-links {
-    display: flex;
-    color: white;
-    list-style: none;
-    gap: 40px;
+.navbar .nav-links .nav-link{
+    color: white !important;
+    margin-left: 40px;
     font-size: 25px;
-    flex-wrap: wrap;
+}
+
+.navbar .nav-links .nav-link:hover{
+    color: rgba(174, 0, 255, 0.936) !important;
+    text-decoration: underline;
+    transition: all 0.3s ease;
 }
 
 .logo-img img{
@@ -66,10 +63,15 @@ footer {
     justify-content: center;
     align-items: center;
     color: white;
-    height: 60vh;
+    height: 70vh;
     text-align: center;
     font-weight: 700;
 }
+ @media(max-width: 768px) {
+    .hero-main {
+        height: 30vh;
+    }
+ }
 
 /*Clases para el componente carrusel de bootstrap para poder corregir el tamano de las imagenes*/
 .destacados {
@@ -90,8 +92,8 @@ footer {
 }
 
 .carousel-item img {
-    width: 80%;
-    height: 95%;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
     border-radius: 15px;
     transition: transform 0.35s ease, box-shadow 0.35s ease;
@@ -121,10 +123,52 @@ footer {
 
 .cards-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr; 
     justify-items: center;
     gap: 30px;
+    padding: 20px;
 }
-/*Transiciones / Animaciones / Hover*/
 
-/*Otras animaciones*/
+@media (min-width: 600px) {
+    .cards-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1000px) {
+    .cards-grid {
+        grid-template-columns: repeat(3, 1fr);
+        max-width: 1200px;
+        margin: 0 auto; 
+    }
+}
+
+.navbar-toggler-icon {
+  filter: invert(1);
+}
+
+@media (max-width: 768px) {
+    .carousel-inner {
+        width: 100%;
+        height: 22rem;
+    }
+
+    .carousel-item img {
+        object-fit: contain;
+        background: #000;
+    }
+
+       .carousel-caption {
+        font-size: 0.75rem;
+        padding: 6px;
+        bottom: 8%;
+    }
+
+    .carousel-caption h5 {
+        font-size: 0.9rem;
+    }
+
+    .carousel-caption p {
+        font-size: 0.7rem;
+    }
+}
