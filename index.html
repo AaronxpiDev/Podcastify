@@ -6,9 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-    crossorigin="anonymous"></script>
+
   <link rel="stylesheet" href="./style/style.css" />
   <link rel="icon" type="image/png" href="./style/img/podcastify-ico.png" />
   <title>Podcast || Recomendaciones || mas...</title>
@@ -17,16 +15,30 @@
 <body>
   <div class="hero-wrapper">
     <header>
-      <nav class="navbar-main">
-        <div class="logo-img">
-          <a href="#"><img src="./style/img/podcastify-logo.png" alt="logo de pagina" /></a>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class=" logo-img navbar-brand" href="#"><img src="./style/img/podcastify-logo.png" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 nav-links">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Destacados</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Categoria</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Contacto</a>
+              </li>
+          </div>
         </div>
-        <ul class="nav-links">
-          <li><a href="#">Inicio</a></li>
-          <li><a href="#">Destacados</a></li>
-          <li><a href="#">Categorías</a></li>
-          <li><a href="#">Contacto</a></li>
-        </ul>
       </nav>
     </header>
     <section class="hero-main">
@@ -37,7 +49,7 @@
     </section>
   </div>
   <main>
-    <section class="destacados">
+    <section class="destacados container">
       <h2>Los Mas Destacados</h2>
       <div id="carouselExampleCaptions" class="carousel slide">
         <div class="carousel-indicators">
@@ -52,7 +64,7 @@
           <div class="carousel-item active">
             <a href="https://www.youtube.com/@podcastparanormal" target="_blank"><img src="./style/img/Paranormal.jpg"
                 class="d-block w-100" alt="imagen de podcast paranormal" /></a>
-            <div class="carousel-caption d-none d-md-block">
+            <div class="carousel-caption">
               <h5>El Podcast No.1 de Terror</h5>
               <p>
                 Escucha: Historias paranormales, casos famosos e inquietantes
@@ -63,7 +75,7 @@
           <div class="carousel-item">
             <a href="https://open.spotify.com/show/6uTkzX7ZgKPBMAhfvxNwKd?si=136b7452a8fe47e1" target="_blank"><img
                 src="./style/img/cazagringos.jpg" class="d-block w-100" alt="imagen de podcast cazagringos" /></a>
-            <div class="carousel-caption d-none d-md-block">
+            <div class="carousel-caption">
               <h5>Historias de crímenes y persecución en México</h5>
               <p>
                 En México existe un grupo policial dedicado a buscar
@@ -75,7 +87,7 @@
           <div class="carousel-item">
             <a href="https://www.youtube.com/@GAFE423/videos" target="_blank"><img src="./style/img/zonadeguerra.jpg"
                 class="d-block w-100" alt="imagen podcast zona de guerra" /></a>
-            <div class="carousel-caption d-none d-md-block">
+            <div class="carousel-caption">
               <h5>
                 Historias contadas de la mano de un Exmiembro de las Fuerzas
                 Especiales Mexicanas
@@ -100,72 +112,97 @@
       </div>
     </section>
     <section class="podcasts-section">
-      <h2 id="subtitulo-destacado">Hola seccion nueva</h2>
+      <h2 id="subtitulo-destacado">Catalogo de Podcast's</h2>
       <div class="cards-grid">
-        <div class="card bg-warning" style="width: 18rem;">
+        <div class="card bg-warning">
           <img src="./style/img/pepeychema-logo.jpeg" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s
-              content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+            <h5 class="card-title">Pepe & Chema Podcast</h5>
+            <p class="card-text">Historias fuertes sin sensura: Casos de injusticia, negligencia sin sensura. Como
+              tambien entrevistas a trabajadores fuera de la comun.</p>
+            <a href="#" class="btn btn-success">Ir a Escuchar 🎧</a>
           </div>
         </div>
-        <div class="card bg-warning" style="width: 18rem;">
+        <div class="card bg-warning">
           <img src="./style/img/lapension-logo.jpeg" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s
-              content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+            <h5 class="card-title">La Pensión</h5>
+            <p class="card-text">Historias sobre anecdotas de los Pioneros de Youtube en México: Anecdotas de shows,
+              estafas, trabajos y un grande etc.</p>
+            <a href="#" class="btn btn-success">Ir a Escuchar 🎧</a>
           </div>
         </div>
-        <div class="card bg-warning" style="width: 18rem;">
+        <div class="card bg-warning">
           <img src="./style/img/gusgri-logo.jpeg" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s
-              content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+            <h5 class="card-title">Gusgri Podcast</h5>
+            <p class="card-text">Entrevistas a personas con trabajos poco comunes, a personas que han pasado cosas
+              inquientantes e historias interesantes.</p>
+            <a href="#" class="btn btn-success">Ir a Escuchar 🎧</a>
           </div>
         </div>
-        <div class="card bg-warning" style="width: 18rem;">
+        <div class="card bg-warning">
           <img src="./style/img/anonimo-logo.jpeg" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s
-              content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+            <h5 class="card-title">Anónimo Podcast</h5>
+            <p class="card-text">Cuentan historias que su audiencia les envian: relaciones prohibidas, traiciones,
+              secretos y chismes familiares y mucho mas ...</p>
+            <a href="#" class="btn btn-success">Ir a Escuchar 🎧</a>
           </div>
         </div>
-        <div class="card bg-warning" style="width: 18rem;">
+        <div class="card bg-warning">
           <img src="./style/img/sinley-logo.jpeg" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s
-              content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+            <h5 class="card-title">Sin Ley</h5>
+            <p class="card-text">Podcast sobre injusticia fondo "C4Jimenez", cuenta el como investigo y vivio las
+              historias de su programa. </p>
+            <a href="#" class="btn btn-success">Ir a Escuchar 🎧</a>
           </div>
         </div>
-        <div class="card bg-warning" style="width: 18rem;">
+        <div class="card bg-warning">
           <img src="./style/img/penitencia-logo.jpeg" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s
-              content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+            <h5 class="card-title">Penitencia</h5>
+            <p class="card-text">Entrevistas a personas en situacion de carcel: historias oscuras, injusticia y
+              cualquier tipo de delito por Saskia Niño de Rivera.</p>
+            <a href="#" class="btn btn-success">Ir a Escuchar 🎧</a>
           </div>
         </div>
       </div>
     </section>
   </main>
   <footer>
-    <section>
-      <h1>Hola pie de pagina</h1>
+    <section class="footer">
+      <div class="container-footer">
+        <div>
+          <h3>Podcastify</h3>
+          <p>Descubre y recomienda los mejores podcasts en español.</p>
+        </div>
+        <div>
+          <h3>Secciones</h3>
+          <ul class="footer-links">
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Destacados</a></li>
+            <li><a href="#">Catalogo</a></li>
+            <li><a href="#">Derechos</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Siguenos</h3>
+          <div class="social-icons">
+            <a href="#">🌐</a>
+            <a href="#">🐦</a>
+            <a href="#">📸</a>
+            <a href="#">▶️</a>
+            <p>© 2026 Podcastify — Todos los derechos reservados</p>
+          </div>
+        </div>
+      </div>
     </section>
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
     crossorigin="anonymous"></script>
 </body>
+
 </html>
